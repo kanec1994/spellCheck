@@ -5,5 +5,8 @@ test: all
 	./editDist
 
 editDist: editDist.cpp
-	($CC) -g editDist.cpp -o editDist
+	$(CC) -g editDist.cpp -o editDist
+
+clean:
+	-rm editDist
 
