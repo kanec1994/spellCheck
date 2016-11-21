@@ -1,12 +1,9 @@
 CC=g++ -std=c++11
-all: editDist
+all: editDist.o
 
-test: all
-	./editDist
-
-editDist: editDist.cpp
-	$(CC) -g editDist.cpp -o editDist
+editDist.o: editDist.cpp
+	$(CC) -c editDist.cpp -o editDist.o
 
 clean:
-	-rm editDist
+	-rm editDist.o
 

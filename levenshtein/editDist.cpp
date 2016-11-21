@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include "editDist.hpp"
 /**
  *
  * Algorithm idea:
@@ -60,12 +59,4 @@ int editDistance(string str1, string str2)
         }
     }
     return dist[len1-1][len2-1];
-}
-
-int main()
-{
-    string str1 = "tskfsddjfkjsdkfjdskj";
-    string str2 = "tskfsddjfkjsdkfjdskj";
-    cout << "min edit is " << editDistance(str1,str2) << endl;
-    return 0;
 }
