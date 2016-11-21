@@ -39,17 +39,15 @@
 using namespace std;
 int editDistance(string str1, string str2)
 {
+    str1 = " " + str1;
+    str2 = " "+ str2;
     int len1 = str1.length();
     int len2 = str2.length();
     int dist[len1][len2]; // The dynamic table
     for(int i = 0; i < len1; i++){
         for(int j = 0; j < len2; j++){
-            if (i == 0 && j == 0)
-                dist[i][j] = 0;
-            else if (i == 0 && j != 0)
-                dist[i][j] = j;
-            else if (j == 0 && i != 0)
-                 dist[i][j] = i;
+            if (min(i,j) == 0)
+                dist[i][j] = max(i,j);
             else{
                 int cost = 0; // replacement cost
                 if(str1.at(i) != str2.at(j))
