@@ -1,5 +1,5 @@
 /*************************************************************************
- * ---Library textfreq---                                                *
+ * ---Library freq---                                                *
  *  Suggested use:                                                       *
  *  --> Construct a Text Object using a list of strings in               *
  *      the constructor.                                                 *
@@ -8,8 +8,8 @@
  *      Returns -1 if word is not present                                *
  *                                                                       *
  *************************************************************************/
-#ifndef TEXTFREQ_H
-#define TEXTFREQ_H
+#ifndef FREQ_H
+#define FREQ_H
 #include <list>
 #include <unordered_map>
 

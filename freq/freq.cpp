@@ -1,5 +1,5 @@
 #include <iterator>
-#include "textfreq.hpp"
+#include "freq.hpp"
 
 using namespace std;
 
