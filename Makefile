@@ -7,13 +7,10 @@ all: main
 main: main.cpp $(libs)
 	$(CC) main.cpp freq/freq.o editDist/editDist.o reader/reader.o -o main
 
-
-
-
 # Build library objects
 freq.o: ./freq/freq.cpp ./freq/freq.hpp
 	cd freq && $(CC) -c freq.cpp -o freq.o
-	
+
 editDist.o: ./editDist/editDist.cpp ./editDist/editDist.hpp
 	cd editDist && $(CC) -c editDist.cpp -o editDist.o
 
