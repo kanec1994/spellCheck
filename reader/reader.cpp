@@ -1,5 +1,5 @@
 #include "reader.hpp"
-#include <ctype.h>
+#define isascii(c)  ((c & ~0x7F) == 0)
 using namespace std;
 
 /*
