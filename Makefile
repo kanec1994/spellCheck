@@ -18,4 +18,4 @@ reader.o: ./reader/reader.cpp ./reader/reader.hpp
 	cd reader && $(CC) -c reader.cpp -o reader.o
 
 clean:
-	rm */*.o main
+	rm */*.o main *.exe
