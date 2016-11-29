@@ -9,5 +9,6 @@
 #include <string>
 
 void createDict(std::string filename);
+void withinTwoEdits(std::string word);
 
 #endif

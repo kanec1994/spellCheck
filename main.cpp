@@ -14,7 +14,8 @@ int main(int argc, char** argv)
     string str2 = argv[2]; 
     cout << "Edit distance is " << editDistance(str1,str2) << endl;
 	string dictName = argv[3];
-	cout << "Current dictionary contents:" << endl;
+	//cout << "Current dictionary contents:" << endl;
 	createDict(dictName);
+	words = withinTwoEdits("asdfklhdalkf");
     return 0;
 }
