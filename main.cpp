@@ -13,5 +13,8 @@ int main(int argc, char** argv)
     string str1 = argv[1]; 
     string str2 = argv[2]; 
     cout << "Edit distance is " << editDistance(str1,str2) << endl;
+	string dictName = argv[3];
+	cout << "Current dictionary contents:" << endl;
+	createDict(dictName);
     return 0;
 }
