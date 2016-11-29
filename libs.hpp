@@ -3,5 +3,5 @@
 #include "editDist/editDist.hpp"
 #include "freq/freq.hpp"
 #include "reader/reader.hpp"
-#include "createDict/createDict.hpp"
+#include "dictOperations/dictOperations.hpp"
 #endif
