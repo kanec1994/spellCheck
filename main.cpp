@@ -16,6 +16,7 @@ int main(int argc, char** argv)
 	string dictName = argv[3];
 	//cout << "Current dictionary contents:" << endl;
 	createDict(dictName);
-	words = withinTwoEdits("asdfklhdalkf");
+	withinTwoEdits("aaron");
+	withinTwoEdits("asdbjksa");
     return 0;
 }
